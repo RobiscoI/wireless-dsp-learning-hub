@@ -1,4 +1,24 @@
 .sites-runtime/
 node_modules/
 .env
+.env.*
 *.tar
+
+# ---- build / run outputs (jetson track and Python) ----
+build/
+output/
+__pycache__/
+*.pyc
+.venv/
+
+# ---- MATLAB track ----
+# The Notion workbook ZIP (original material, not redistributed) is unpacked here on each PC.
+matlab/kit/
+# Run outputs inside session copies
+matlab/sessions/**/results*/
+matlab/sessions/**/comparisons/
+*.mat
+*.asv
+slprj/
+*.slxc
+.matlab-prefs/
